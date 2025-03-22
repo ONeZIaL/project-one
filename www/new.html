@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Видеокарты</title>
+    <style>
+        body {
+            background-image: url('file:///home/lnv/%D0%A0%D0%B0%D0%B1%D0%BE%D1%87%D0%B8%D0%B9%20%D1%81%D1%82%D0%BE%D0%BB/www/photo/gologramma_shema_scifi_139294_1920x1080.jpg'); /* Путь к вашему изображению */
+            background-size: cover; /* Покрывает всю область фона */
+            background-position: center; /* Центрирование изображения */
+            background-repeat: no-repeat; /* Не повторять изображение */
+            height: 100vh; /* Высота на полный экран */
+            margin: 0; /* Убираем отступы */
+            color: white; /* Цвет текста (можно изменить на любой другой) */
+            font-family: Arial, sans-serif; /* Шрифт */
+        }
+
+        .button-container {
+            display: flex; /* Используем flexbox для размещения кнопок в ряд */
+            justify-content: space-around; /* Распределяем кнопки по всей ширине */
+            margin-bottom: 5px; /* Отступ между рядами кнопок */
+        }
+        .button {
+            display: inline-block; /* Размещаем кнопки в строке */
+            margin: 2px; /* Расстояние между кнопками */
+            padding: 10px; /* Внутренние отступы кнопки */
+            font-size: 18px; /* Размер шрифта */
+            color: white; /* Цвет текста по умолчанию */
+            text-decoration: none; /* Убираем подчеркивание текста */
+            border-radius: 10px; /* Скругление углов кнопки */
+            transition: background-color 0.1s; /* Плавный переход цвета */
+            text-align: center; /* Центрируем текст */
+            width: 350px; /* Ширина кнопок */
+            height: 210px; /* Высота кнопок */
+        }
+        .button1 { background-image: url('file:///home/lnv/%D0%A0%D0%B0%D0%B1%D0%BE%D1%87%D0%B8%D0%B9%20%D1%81%D1%82%D0%BE%D0%BB/www/photo/msi-geforce-rtx-5070-inspire-3x-fit-389x219.jpg');}
+        .button1:hover { background-color: #0056b3; }
+
+        .button2 { background-image: url('file:///home/lnv/%D0%A0%D0%B0%D0%B1%D0%BE%D1%87%D0%B8%D0%B9%20%D1%81%D1%82%D0%BE%D0%BB/www/photo/msi-geforce-rtx-5070-gaming-trio-fit-389x219.jpg');}
+        .button2:hover { background-color: #218838; }
+
+        .button3 { background-image: url('file:///home/lnv/%D0%A0%D0%B0%D0%B1%D0%BE%D1%87%D0%B8%D0%B9%20%D1%81%D1%82%D0%BE%D0%BB/www/photo/zotac-gaming-geforce-rtx-4070-ti-super-solid-fit-389x219.jpg');}
+        .button3:hover { background-color: #c82333; }
+
+        .button4 { background-image: url('file:///home/lnv/%D0%A0%D0%B0%D0%B1%D0%BE%D1%87%D0%B8%D0%B9%20%D1%81%D1%82%D0%BE%D0%BB/www/photo/msi-geforce-rtx-4060-ti-gaming-x-slim-fit-389x219.jpg');}
+        .button4:hover { background-color: #e0a800; }
+
+        .button5 { background-image: url('file:///home/lnv/%D0%A0%D0%B0%D0%B1%D0%BE%D1%87%D0%B8%D0%B9%20%D1%81%D1%82%D0%BE%D0%BB/www/photo/msi-geforce-rtx-5080-vanguard-fit-389x219.jpg');}
+        .button5:hover { background-color: #117a8b; }
+
+        .button6 { background-image: url('file:///home/lnv/%D0%A0%D0%B0%D0%B1%D0%BE%D1%87%D0%B8%D0%B9%20%D1%81%D1%82%D0%BE%D0%BB/www/photo/gigabyte-geforce-rtx-5080-windforce-fit-389x219.jpg');}
+        .button6:hover { background-color: #520dc2; }
+
+        .button7 { background-image: url('file:///home/lnv/%D0%A0%D0%B0%D0%B1%D0%BE%D1%87%D0%B8%D0%B9%20%D1%81%D1%82%D0%BE%D0%BB/www/photo/rog-astral-geforce-rtx-5090-fit-389x219.jpg');}
+        .button7:hover { background-color: #e36802; }
+
+        .button8 { background-image: url('file:///home/lnv/%D0%A0%D0%B0%D0%B1%D0%BE%D1%87%D0%B8%D0%B9%20%D1%81%D1%82%D0%BE%D0%BB/www/photo/gigabyte-geforce-rtx-5080-gaming-fit-389x219.jpg');}
+        .button8:hover { background-color: #5a3e98; }
+
+        .button9 { background-image: url('file:///home/lnv/%D0%A0%D0%B0%D0%B1%D0%BE%D1%87%D0%B8%D0%B9%20%D1%81%D1%82%D0%BE%D0%BB/www/photo/msi-geforce-rtx-5070-inspire-3x-fit-389x219.jpg');}
+        .button9:hover { background-color: #0056b3; }
+    </style>
+</head>
+<body>
+    <h1></h1>
+
+
+    <div class="button-container">
+        <a href="" class="button button1">MSI GeForce RTX 5070 INSPIRE 3X [12GB, 6144 CUDA]</a>
+        <a href="page2.html" class="button button2">MSI GeForce RTX 5070 GAMING TRIO [12GB, 6144 CUDA]</a>
+        <a href="page3.html" class="button button3">ZOTAC GAMING GeForce RTX 4070 Ti SUPER SOLID [16GB, 8448 CUDA]</a>
+        <a href="page4.html" class="button button4">MSI GeForce RTX 4060 Ti GAMING SLIM [8GB, 4352 CUDA]</a>
+        </body>
+    </div>
+
+    <div class="button-container">
+        <a href="page5.html" class="button button5">MSI GeForce RTX 5080 VANGUARD [16GB, 10752 CUDA]</a>
+        <a href="page6.html" class="button button6">GIGABYTE GeForce RTX 5080 WINDFORCE [16GB, 10752 CUDA]</a>
+        <a href="page7.html" class="button button7">ASUS GeForce RTX 5090 ROG Astral [32GB, 21760 CUDA]</a>
+        <a href="page8.html" class="button button8">GIGABYTE GeForce RTX 5080 GAMING [16GB, 10752 CUDA]</a>
+    </div>
+    <body>
+
+    <script>
+        // Обработчик событий для изменения цвета текста в зависимости от фона
+        document.querySelectorAll('.button').forEach(button => {
+            button.addEventListener('mouseenter', function () { // Используем mouseenter вместо input
+                const color = window.getComputedStyle(this).backgroundColor;
+                this.style.color = color === 'rgba(0, 0, 0, 0)' ? 'white' : 'white';
+            });
+        });
+    </script>
+</body>
+<table>
+  <!-- здесь будут ячейки таблицы -->
+</table>
+</html>

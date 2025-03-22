@@ -1,0 +1,332 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Главная страница</title>
+    <style>
+        body {
+            background-image: url('file:///home/lnv/%D0%A0%D0%B0%D0%B1%D0%BE%D1%87%D0%B8%D0%B9%20%D1%81%D1%82%D0%BE%D0%BB/www/photo/gologramma_shema_scifi_139294_1920x1080.jpg'); /* Путь к вашему изображению */
+            background-size: cover; /* Покрывает всю область фона */
+            background-position: center; /* Центрирование изображения */
+
+            height: 100vh; /* Высота на полный экран */
+            margin: 0; /* Убираем отступы */
+            font-family: Arial, sans-serif; /* Шрифт */
+          }
+        .button-container {
+            display: flex; /* Используем flexbox для размещения кнопок в ряд */
+            justify-content: space-around; /* Распределяем кнопки по всей ширине */
+            margin-bottom: 10px; /* Отступ между рядами кнопок */
+        }
+        .button {
+            display: inline-block; /* Размещаем кнопки в строке */
+            margin: 5px; /* Расстояние между кнопками */
+            padding: 5px; /* Внутренние отступы кнопки */
+            font-size: 20px; /* Размер шрифта */
+            color: white; /* Цвет текста по умолчанию */
+            text-decoration: none; /* Убираем подчеркивание текста */
+            border-radius: 5px; /* Скругление углов кнопки */
+            transition: background-color 0.4s; /* Плавный переход цвета */
+            text-align: center; /* Центрируем текст */
+            width: 275px; /* Ширина кнопок */
+            height: 210px; /* Высота кнопок */
+        }
+
+        .button1 {
+            display: inline-block; /* Размещаем кнопки в строке */
+            margin: 5px; /* Расстояние между кнопками */
+            padding: 5px; /* Внутренние отступы кнопки */
+            font-size: 40px; /* Размер шрифта */
+            color: white; /* Цвет текста по умолчанию */
+            text-decoration: none; /* Убираем подчеркивание текста */
+            border-radius: 2px; /* Скругление углов кнопки */
+            transition: background-color 0.2s; /* Плавный переход цвета */
+            text-align: center; /* Центрируем текст */
+            width: 275px; /* Ширина кнопок */
+            height: 55px; /* Высота кнопок */
+        }
+
+        .button2 {
+            display: inline-block; /* Размещаем кнопки в строке */
+            margin: 5px; /* Расстояние между кнопками */
+            padding: 5px; /* Внутренние отступы кнопки */
+            font-size: 40px; /* Размер шрифта */
+            color: white; /* Цвет текста по умолчанию */
+            text-decoration: none; /* Убираем подчеркивание текста */
+            border-radius: 2px; /* Скругление углов кнопки */
+            transition: background-color 0.2s; /* Плавный переход цвета */
+            text-align: center; /* Центрируем текст */
+            width: 275px; /* Ширина кнопок */
+            height: 55px; /* Высота кнопок */
+        }
+
+        .button3 {
+            display: inline-block; /* Размещаем кнопки в строке */
+            margin: 5px; /* Расстояние между кнопками */
+            padding: 5px; /* Внутренние отступы кнопки */
+            font-size: 40px; /* Размер шрифта */
+            color: white; /* Цвет текста по умолчанию */
+            text-decoration: none; /* Убираем подчеркивание текста */
+            border-radius: 2px; /* Скругление углов кнопки */
+            transition: background-color 0.2s; /* Плавный переход цвета */
+            text-align: center; /* Центрируем текст */
+            width: 275px; /* Ширина кнопок */
+            height: 55px; /* Высота кнопок */
+        }
+
+        .button4 {
+            display: inline-block; /* Размещаем кнопки в строке */
+            margin: 5px; /* Расстояние между кнопками */
+            padding: 5px; /* Внутренние отступы кнопки */
+            font-size: 40px; /* Размер шрифта */
+            color: white; /* Цвет текста по умолчанию */
+            text-decoration: none; /* Убираем подчеркивание текста */
+            border-radius: 2px; /* Скругление углов кнопки */
+            transition: background-color 0.2s; /* Плавный переход цвета */
+            text-align: center; /* Центрируем текст */
+            width: 275px; /* Ширина кнопок */
+            height: 55px; /* Высота кнопок */
+        }
+
+        .button5 {
+            display: inline-block; /* Размещаем кнопки в строке */
+            margin: 5px; /* Расстояние между кнопками */
+            padding: 5px; /* Внутренние отступы кнопки */
+            font-size: 40px; /* Размер шрифта */
+            color: white; /* Цвет текста по умолчанию */
+            text-decoration: none; /* Убираем подчеркивание текста */
+            border-radius: 2px; /* Скругление углов кнопки */
+            transition: background-color 0.2s; /* Плавный переход цвета */
+            text-align: center; /* Центрируем текст */
+            width: 275px; /* Ширина кнопок */
+            height: 55px; /* Высота кнопок */
+        }
+
+        .button14 {
+            display: inline-block; /* Размещаем кнопки в строке */
+            margin: 2px; /* Расстояние между кнопками */
+            padding: 5px; /* Внутренние отступы кнопки */
+            font-size: 20px; /* Размер шрифта */
+            color: white; /* Цвет текста по умолчанию */
+            text-decoration: none; /* Убираем подчеркивание текста */
+            border-radius: 5px; /* Скругление углов кнопки */
+            transition: background-color 0.2s; /* Плавный переход цвета */
+            text-align: center; /* Центрируем текст */
+            width: 350px; /* Ширина кнопок */
+            height: 210px; /* Высота кнопок */
+        }
+
+        .button15 {
+            display: inline-block; /* Размещаем кнопки в строке */
+            margin: 2px; /* Расстояние между кнопками */
+            padding: 5px; /* Внутренние отступы кнопки */
+            font-size: 20px; /* Размер шрифта */
+            color: white; /* Цвет текста по умолчанию */
+            text-decoration: none; /* Убираем подчеркивание текста */
+            border-radius: 5px; /* Скругление углов кнопки */
+            transition: background-color 0.2s; /* Плавный переход цвета */
+            text-align: center; /* Центрируем текст */
+            width: 350px; /* Ширина кнопок */
+            height: 210px; /* Высота кнопок */
+        }
+
+        .button16 {
+            display: inline-block; /* Размещаем кнопки в строке */
+            margin: 2px; /* Расстояние между кнопками */
+            padding: 5px; /* Внутренние отступы кнопки */
+            font-size: 20px; /* Размер шрифта */
+            color: white; /* Цвет текста по умолчанию */
+            text-decoration: none; /* Убираем подчеркивание текста */
+            border-radius: 5px; /* Скругление углов кнопки */
+            transition: background-color 0.2s; /* Плавный переход цвета */
+            text-align: center; /* Центрируем текст */
+            width: 350px; /* Ширина кнопок */
+            height: 210px; /* Высота кнопок */
+        }
+
+        .button17 {
+            display: inline-block; /* Размещаем кнопки в строке */
+            margin: 2px; /* Расстояние между кнопками */
+            padding: 5px; /* Внутренние отступы кнопки */
+            font-size: 20px; /* Размер шрифта */
+            color: white; /* Цвет текста по умолчанию */
+            text-decoration: none; /* Убираем подчеркивание текста */
+            border-radius: 5px; /* Скругление углов кнопки */
+            transition: background-color 0.2s; /* Плавный переход цвета */
+            text-align: center; /* Центрируем текст */
+            width: 350px; /* Ширина кнопок */
+            height: 210px; /* Высота кнопок */
+        }
+
+        .button18 {
+            display: inline-block; /* Размещаем кнопки в строке */
+            margin: 2px; /* Расстояние между кнопками */
+            padding: 5px; /* Внутренние отступы кнопки */
+            font-size: 20px; /* Размер шрифта */
+            color: white; /* Цвет текста по умолчанию */
+            text-decoration: none; /* Убираем подчеркивание текста */
+            border-radius: 5px; /* Скругление углов кнопки */
+            transition: background-color 0.2s; /* Плавный переход цвета */
+            text-align: center; /* Центрируем текст */
+            width: 350px; /* Ширина кнопок */
+            height: 210px; /* Высота кнопок */
+        }
+
+        .button19 {
+            display: inline-block; /* Размещаем кнопки в строке */
+            margin: 2px; /* Расстояние между кнопками */
+            padding: 5px; /* Внутренние отступы кнопки */
+            font-size: 20px; /* Размер шрифта */
+            color: white; /* Цвет текста по умолчанию */
+            text-decoration: none; /* Убираем подчеркивание текста */
+            border-radius: 5px; /* Скругление углов кнопки */
+            transition: background-color 0.2s; /* Плавный переход цвета */
+            text-align: center; /* Центрируем текст */
+            width: 350px; /* Ширина кнопок */
+            height: 210px; /* Высота кнопок */
+        }
+
+        .button20 {
+            display: inline-block; /* Размещаем кнопки в строке */
+            margin: 2px; /* Расстояние между кнопками */
+            padding: 5px; /* Внутренние отступы кнопки */
+            font-size: 20px; /* Размер шрифта */
+            color: white; /* Цвет текста по умолчанию */
+            text-decoration: none; /* Убираем подчеркивание текста */
+            border-radius: 5px; /* Скругление углов кнопки */
+            transition: background-color 0.2s; /* Плавный переход цвета */
+            text-align: center; /* Центрируем текст */
+            width: 350px; /* Ширина кнопок */
+            height: 210px; /* Высота кнопок */
+        }
+
+        .button21 {
+            display: inline-block; /* Размещаем кнопки в строке */
+            margin: 2px; /* Расстояние между кнопками */
+            padding: 5px; /* Внутренние отступы кнопки */
+            font-size: 20px; /* Размер шрифта */
+            color: white; /* Цвет текста по умолчанию */
+            text-decoration: none; /* Убираем подчеркивание текста */
+            border-radius: 5px; /* Скругление углов кнопки */
+            transition: background-color 0.2s; /* Плавный переход цвета */
+            text-align: center; /* Центрируем текст */
+            width: 350px; /* Ширина кнопок */
+            height: 210px; /* Высота кнопок */
+        }
+        .button1 { background-color: #595151;}
+        .button1:hover { background-color: #4f4848; }
+
+        .button2 { background-color: #595151;}
+        .button2:hover { background-color: #4f4848; }
+
+        .button3 { background-color: #595151;}
+        .button3:hover { background-color: #4f4848; }
+
+        .button4 { background-color: #595151;}
+        .button4:hover { background-color: #4f4848; }
+
+        .button5 { background-color: #595151;}
+        .button5:hover { background-color: #4f4848; }
+
+        .button6 { background-image: url('file:///home/lnv/%D0%A0%D0%B0%D0%B1%D0%BE%D1%87%D0%B8%D0%B9%20%D1%81%D1%82%D0%BE%D0%BB/www/photo/msi-geforce-rtx-4060-ti-gaming-x-slim-fit-389x219(3).jpg');}
+        .button6:hover { background-color: #4f4848dc; }
+
+        .button7 { background-image: url('file:///home/lnv/%D0%A0%D0%B0%D0%B1%D0%BE%D1%87%D0%B8%D0%B9%20%D1%81%D1%82%D0%BE%D0%BB/www/photo/intel-core-i7-14th-non-k-fit-389x219(3).jpg');}
+        .button7:hover { background-color: #e36802; }
+
+        .button8 { background-image: url('file:///home/lnv/%D0%A0%D0%B0%D0%B1%D0%BE%D1%87%D0%B8%D0%B9%20%D1%81%D1%82%D0%BE%D0%BB/www/photo/msi-z790-a-pro-a-max-fit-389x219(2).jpg');}
+        .button8:hover { background-color: #5a3e98; }
+
+        .button9 { background-image: url('file:///home/lnv/%D0%A0%D0%B0%D0%B1%D0%BE%D1%87%D0%B8%D0%B9%20%D1%81%D1%82%D0%BE%D0%BB/www/photo/g.skill-tridient-z5-rgb-fit-389x219(2).jpg');}
+        .button9:hover { background-color: #5a3e98; }
+
+        .button10 { background-image: url('file:///home/lnv/%D0%A0%D0%B0%D0%B1%D0%BE%D1%87%D0%B8%D0%B9%20%D1%81%D1%82%D0%BE%D0%BB/www/photo/deepcool-ld360-black-fit-389x219.jpg');}
+        .button10:hover { background-color: #218838; }
+
+        .button11 { background-image: url('file:///home/lnv/%D0%A0%D0%B0%D0%B1%D0%BE%D1%87%D0%B8%D0%B9%20%D1%81%D1%82%D0%BE%D0%BB/www/photo/jonsbo-d41-std-screen-white-alt-fit-389x219.jpg');}
+        .button11:hover { background-color: #c82333; }
+
+        .button12 { background-image: url('file:///home/lnv/%D0%A0%D0%B0%D0%B1%D0%BE%D1%87%D0%B8%D0%B9%20%D1%81%D1%82%D0%BE%D0%BB/www/photo/thermaltake-toighpower-gf3-fit-389x219.jpg');}
+        .button12:hover { background-color: #e0a800; }
+
+        .button13 { background-image: url('file:///home/lnv/%D0%A0%D0%B0%D0%B1%D0%BE%D1%87%D0%B8%D0%B9%20%D1%81%D1%82%D0%BE%D0%BB/www/photo/msi-spatum-m570-fit-389x219.jpg');}
+        .button13:hover { background-color: #117a8b; }
+
+        .button14 { background-image: url('file:///home/lnv/%D0%A0%D0%B0%D0%B1%D0%BE%D1%87%D0%B8%D0%B9%20%D1%81%D1%82%D0%BE%D0%BB/www/photo/rog-astral-geforce-rtx-5090-fit-389x219.jpg');}
+        .button14:hover { background-color: #520dc2; }
+
+        .button15 { background-image: url('file:///home/lnv/%D0%A0%D0%B0%D0%B1%D0%BE%D1%87%D0%B8%D0%B9%20%D1%81%D1%82%D0%BE%D0%BB/www/photo/intel-core-i9-14th-fit-389x219.jpg');}
+        .button15:hover { background-color: #e36802; }
+
+        .button16 { background-image: url('file:///home/lnv/%D0%A0%D0%B0%D0%B1%D0%BE%D1%87%D0%B8%D0%B9%20%D1%81%D1%82%D0%BE%D0%BB/www/photo/asus-rog-strix-z890-e-gaming-fit-389x219.jpg');}
+        .button16:hover { background-color: #5a3e98; }
+
+        .button17 { background-image: url('file:///home/lnv/%D0%A0%D0%B0%D0%B1%D0%BE%D1%87%D0%B8%D0%B9%20%D1%81%D1%82%D0%BE%D0%BB/www/photo/g-skil-trident-z-ddr5-rgb-fit-389x219.jpg');}
+        .button17:hover { background-color: #5a3e98; }
+
+        .button18 { background-image: url('file:///home/lnv/%D0%A0%D0%B0%D0%B1%D0%BE%D1%87%D0%B8%D0%B9%20%D1%81%D1%82%D0%BE%D0%BB/www/photo/asus-rog-ryuo-iii-360-argb-black-fit-389x219.jpg');}
+        .button18:hover { background-color: #5a3e98; }
+
+        .button19 { background-image: url('file:///home/lnv/%D0%A0%D0%B0%D0%B1%D0%BE%D1%87%D0%B8%D0%B9%20%D1%81%D1%82%D0%BE%D0%BB/www/photo/-rog-strix-helios-rgb-black-fit-389x219.jpg');}
+        .button19:hover { background-color: #5a3e98; }
+
+        .button20 { background-image: url('file:///home/lnv/%D0%A0%D0%B0%D0%B1%D0%BE%D1%87%D0%B8%D0%B9%20%D1%81%D1%82%D0%BE%D0%BB/www/photo/asus-rog-thor-1600w-titianum-fit-389x219.jpg');}
+        .button20:hover { background-color: #5a3e98; }
+
+        .button21 { background-image: url('file:///home/lnv/%D0%97%D0%B0%D0%B3%D1%80%D1%83%D0%B7%D0%BA%D0%B8/msi-spatum-m570-fit-389x219.jpg');}
+        .button21:hover { background-color: #5a3e98; }
+
+    </style>
+</head>
+
+<body>
+<h1></h1>
+
+    <div class="button-container">
+        <a href="file:///home/lnv/%D0%A0%D0%B0%D0%B1%D0%BE%D1%87%D0%B8%D0%B9%20%D1%81%D1%82%D0%BE%D0%BB/www/%D0%BA%D0%B0%D1%82%D0%B0%D0%BB%D0%BE%D0%B3.HTML" class="button button1">Каталог</a>
+        <a href="file:///home/lnv/%D0%A0%D0%B0%D0%B1%D0%BE%D1%87%D0%B8%D0%B9%20%D1%81%D1%82%D0%BE%D0%BB/www/%D0%BA%D0%B0%D1%82%D0%B0%D0%BB%D0%BE%D0%B3.HTML"class="button button2">Список</a>
+        <a href="file:///home/lnv/%D0%A0%D0%B0%D0%B1%D0%BE%D1%87%D0%B8%D0%B9%20%D1%81%D1%82%D0%BE%D0%BB/www/%D0%BA%D0%B0%D1%82%D0%B0%D0%BB%D0%BE%D0%B3.HTML" class="button button3">Набор</a>
+        <a href="file:///home/lnv/%D0%A0%D0%B0%D0%B1%D0%BE%D1%87%D0%B8%D0%B9%20%D1%81%D1%82%D0%BE%D0%BB/www/%D0%BA%D0%B0%D1%82%D0%B0%D0%BB%D0%BE%D0%B3.HTML" class="button button4">Сборка</a>
+        <a href="file:///home/lnv/%D0%A0%D0%B0%D0%B1%D0%BE%D1%87%D0%B8%D0%B9%20%D1%81%D1%82%D0%BE%D0%BB/www/%D0%BA%D0%B0%D1%82%D0%B0%D0%BB%D0%BE%D0%B3.HTML" class="button button5">Таблица</a>
+    </div>
+
+    <div class="button-container">
+        <a href="file:///home/lnv/%D0%A0%D0%B0%D0%B1%D0%BE%D1%87%D0%B8%D0%B9%20%D1%81%D1%82%D0%BE%D0%BB/www/page2.HTML" class="button button6">Видеокарты</a>
+        <a href="file:///home/lnv/%D0%A0%D0%B0%D0%B1%D0%BE%D1%87%D0%B8%D0%B9%20%D1%81%D1%82%D0%BE%D0%BB/www/page3.HTML" class="button button7">Процессоры</a>
+        <a href="file:///home/lnv/%D0%A0%D0%B0%D0%B1%D0%BE%D1%87%D0%B8%D0%B9%20%D1%81%D1%82%D0%BE%D0%BB/www/page4.HTML" class="button button8">Материнская плата</a>
+        <a href="page8.html" class="button button9">Оперативная память</a>
+    </div>
+
+    <div class="button-container">
+        <a href="page5.html" class="button button10">Системы охлаждения</a>
+        <a href="page6.html" class="button button11">Корпуса</a>
+        <a href="page7.html" class="button button12">Блоки питания</a>
+        <a href="page8.html" class="button button13">SSD-накопители</a>
+    </div>
+<center><h1><font color = "white">Лучшие комплектующие</font></h1></center>
+    <div class="button-container">
+        <a href="page8.html" class="button button14">ASUS GeForce RTX 5090 ROG Astral [32GB, 21760 CUDA]</a>
+        <a href="page8.html" class="button button15">Intel® Core™ i9-14900KF [до 6.0GHz, 24 ядра, Custom Ed.]</a>
+        <a href="page5.html" class="button button16">ASUS ROG STRIX Z890-E GAMING [DDR5, Wi-Fi]</a>
+        <a href="page6.html" class="button button17">64GB G.SKILL TRIDENT Z5 RGB White [DDR5, 6000MHz, 2x32GB]</a>
+    </div>
+
+    <div class="button-container">
+        <a href="page7.html" class="button button18">ASUS ROG RYUO III 360 Black</a>
+        <a href="page8.html" class="button button19">ASUS ROG Strix Helios RGB</a>
+        <a href="page8.html" class="button button20">1600W ASUS ROG THOR [80+ Titanium]</a>
+        <a href="page8.html" class="button button21">2TB MSI SPATIUM M570 [10000MB/s, Gen5] </a>
+    </div>
+
+    <script>
+        // Обработчик событий для изменения цвета текста в зависимости от фона
+        document.querySelectorAll('.button').forEach(button => {
+            button.addEventListener('mouseenter', function () { // Используем mouseenter вместо input
+                const color = window.getComputedStyle(this).backgroundColor;
+                this.style.color = color === 'rgba(0, 0, 0, 0)' ? 'white' : 'white';
+            });
+        });
+    </script>
+</body>
+</html>
